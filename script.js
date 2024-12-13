@@ -20,7 +20,7 @@ document
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    emailjs.sendForm("service_qcvdnqn", "template_xygc3er", this).then(
+    emailjs.sendForm("service_qcvdnqn", "template_8zi3udk", this).then(
       function (response) {
         console.log("Email sent successfully:", response);
         document.getElementById("form-message").innerHTML =
@@ -35,12 +35,12 @@ document
     );
 
     // Simple validation
-    // if (name && email && message) {
-    //   document.getElementById("form-message").innerHTML =
-    //     "Thank you for reaching out! I will get back to you soon.";
-    //   document.getElementById("contact-form").reset();
-    // } else {
-    //   document.getElementById("form-message").innerHTML =
-    //     "Please fill in all fields.";
-    // }
+    if (name && email && message) {
+      document.getElementById("form-message").innerHTML =
+        "Thank you for reaching out! I will get back to you soon.";
+      document.getElementById("contact-form").reset();
+    } else {
+      document.getElementById("form-message").innerHTML =
+        "Please fill in all fields.";
+    }
   });
