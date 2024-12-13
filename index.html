@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <div class="container">
+        <h1>John Siordia</h1>
+        <p>Your future developer</p>
+        <a href="#projects" class="btn">See My Work</a>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hey there! I am a husband, father of 3, gamer, and new developer. I
+          like to spend as much time with my family as I can, doing whatever it
+          is we all enjoy. I like all manner of video games from simple retro
+          games to Elden Ring and Phantasy Star Online. I started learning
+          full-stack development about 9 months ago with TripleTen and their
+          Software Engineering Bootcamp program. It has been quite a ride but I
+          finished it on December 3rd. I have completed 6 projects through their
+          course and will be improving on those along with creating my own
+          projects as well. I am entering into my search for a career in
+          development and am really looking forward to doing this for a living!
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project">
+          <img src="./assets/wtwrImage.jpg" alt="Project 1" />
+          <div class="project-info">
+            <h3>What to Wear?</h3>
+            <p>
+              A full-stack application built with the MERN stack, with the
+              custom backend hosted and configured on Google Cloud. It is one of
+              the projects curated by TripleTen during their program. The goal
+              is for the application to suggest items of clothing to wear based
+              on certain weather conditions obtained from a third-party API. The
+              user is able to create accounts and add clothing items to their
+              profile and the application will return those items if they match
+              the suggestion logic. While this project is essentially complete,
+              the next and final step is to make the application responsive at
+              different screen sizes/resolutions.
+            </p>
+            <a
+              href="https://wtwr.nullexistence.net/"
+              class="btn"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="./assets/pkmnTeamImage.jpg" alt="Project 2" />
+          <div class="project-info">
+            <h3>Pokemon Team Builder</h3>
+            <p>
+              A frontend application and one of my own design. It is the final
+              project of my program at TripleTen. It uses the third-party API,
+              PokeAPI, and will include a custom backend in the near future. The
+              intended function is to suggest teams of 6 for the Pokemon video
+              games based on parameters chosen by the user. As of now, the only
+              parameters that can be chosen are certain types in a popup form.
+              The application requests a partial set of data from the API and
+              shows it on the screen. Once the form is submitted, it sorts
+              through this data and randomly returns up to six objects that
+              match the types chosen. I intend to complete this application by
+              creating the backend for user account creation and team
+              configuration storage as well as creating additional popups to
+              show more information on each creature. I also intend to extend
+              the amount of data gathered to include everything that the API has
+              to offer.
+            </p>
+            <a
+              href="https://jsiohn.github.io/pkmnTeamBuilder-frontend/#/"
+              class="btn"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          If you'd like to get in touch or have any questions, feel free to
+          contact me.
+        </p>
+        <form id="contact-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="form-message" class="message"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"
+    ></script>
+  </body>
+</html>
