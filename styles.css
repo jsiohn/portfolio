@@ -23,7 +23,7 @@ body {
 header {
   background: #0402a3;
   color: white;
-  padding: 100px 0;
+  padding: 25px 0;
   text-align: center;
 }
 
@@ -34,7 +34,6 @@ header h1 {
 
 header p {
   font-size: 1.5rem;
-  margin-top: 10px;
 }
 
 .btn {
@@ -45,7 +44,12 @@ header p {
   border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s ease;
+  display: inline-block;
 }
+
+/* header .container .btn {
+  margin-top: 20px;
+} */
 
 .btn:hover {
   background: #2980b9;
@@ -53,7 +57,7 @@ header p {
 
 /* Sections */
 .section {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 h2 {
@@ -68,8 +72,8 @@ h2 {
 }
 
 .project img {
-  width: 300px;
-  height: 200px;
+  width: 600px;
+  height: 400px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -90,7 +94,7 @@ h2 {
 }
 
 /* Contact Form */
-form {
+/* form {
   display: flex;
   flex-direction: column;
 }
@@ -123,7 +127,7 @@ form button:hover {
   margin-top: 15px;
   font-size: 1rem;
   color: #27ae60;
-}
+} */
 
 /* Footer */
 footer {
@@ -135,6 +139,35 @@ footer {
 
 footer p {
   font-size: 1rem;
+}
+
+.social-buttons {
+  text-align: center;
+}
+
+.social-buttons a {
+  margin: 0 10px;
+  color: white; /* Default icon color */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 30px; /* Icon size */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover effects for each icon */
+.social-buttons a.fa-envelope:hover {
+  color: #c71610; /* Email red */
+}
+
+.social-buttons a.fa-github:hover {
+  color: #333; /* GitHub black */
+}
+
+.social-buttons a.fa-linkedin:hover {
+  color: #007bb5; /* LinkedIn blue */
+}
+
+.social-buttons a.fa-twitter:hover {
+  color: #55acee; /* Twitter blue */
 }
 
 /* Media Queries for responsiveness */

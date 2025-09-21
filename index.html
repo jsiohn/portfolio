@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header id="home">
       <div class="container">
         <h1>John Siordia</h1>
-        <p>Your future developer</p>
-        <a href="#projects" class="btn">See My Work</a>
+        <p>Your Future Developer</p>
+        <!-- <a href="#projects" class="btn">See My Work</a> -->
       </div>
     </header>
 
@@ -19,16 +23,14 @@
       <div class="container">
         <h2>About Me</h2>
         <p>
-          Hey there! I am a husband, father of 3, gamer, and new developer. I
-          like to spend as much time with my family as I can, doing whatever it
-          is we all enjoy. I like all manner of video games from simple retro
-          games to Elden Ring and Phantasy Star Online. I started learning
-          full-stack development about 9 months ago with TripleTen and their
-          Software Engineering Bootcamp program. It has been quite a ride but I
-          finished it on December 3rd. I have completed 6 projects through their
-          course and will be improving on those along with creating my own
-          projects as well. I am entering into my search for a career in
-          development and am really looking forward to doing this for a living!
+          Hey there! I am a husband, father of 3, gamer, and Junior Software
+          Developer. I like to spend as much time with my family as I can, doing
+          whatever it is we all enjoy. I like all manner of video games from
+          simple retro games to Elden Ring and Phantasy Star Online. I completed
+          TripleTen's Software Engineering Bootcamp program in December 2024. I
+          am a natural problem solver who loves software development. I aim to
+          be professional, personable, and prompt in everything I do and to
+          Never Stop Learning.
         </p>
       </div>
     </section>
@@ -37,7 +39,34 @@
       <div class="container">
         <h2>My Projects</h2>
         <div class="project">
-          <img src="./assets/wtwrImage.jpg" alt="Project 1" />
+          <img src="./assets/ahaClinicScreen.jpg" alt="Project 1" />
+          <div class="project-info">
+            <h3>AHA! Clinic</h3>
+            <p>
+              This is a full-stack application that uses React+Typescript,
+              Express.js, Node.js, and MongoDB. I developed this project at the
+              request of a local non-profit organization that runs a spay/neuter
+              clinic. I worked closely with the staff and owner to determine the
+              needs of the clinic for daily operations and implemented those
+              features into the application. The app allows the staff to manage
+              clients, their animals, invoice creation and tracking, and the
+              rescue organizations they work with. It is complete with
+              role-based access control and user authentication. This full-stack
+              application is hosted using Render and MongoDB Atlas for the
+              databases. I continue working with the clinic staff to fix bugs
+              and ensure that the application continues to meet their needs as
+              they arise.
+            </p>
+            <a
+              href="https://github.com/jsiohn/ahaClinic"
+              class="btn"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="./assets/wtwrImage.jpg" alt="Project 2" />
           <div class="project-info">
             <h3>What to Wear?</h3>
             <p>
@@ -61,7 +90,7 @@
           </div>
         </div>
         <div class="project">
-          <img src="./assets/pkmnTeamImage.jpg" alt="Project 2" />
+          <img src="./assets/pkmnTeamScreen.jpg" alt="Project 3" />
           <div class="project-info">
             <h3>Pokemon Team Builder</h3>
             <p>
@@ -92,7 +121,7 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- <section id="contact" class="section">
       <div class="container">
         <h2>Contact Me</h2>
         <p>
@@ -124,17 +153,42 @@
         </form>
         <div id="form-message" class="message"></div>
       </div>
-    </section>
+    </section> -->
 
     <footer>
       <div class="container">
-        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+        <div class="social-buttons">
+          <!-- Email -->
+          <a
+            href="mailto:siohn@proton.me"
+            target="_blank"
+            class="fa fa-envelope"
+          ></a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/jsiohn"
+            target="_blank"
+            class="fa fa-github"
+          ></a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/jsiohn"
+            target="_blank"
+            class="fa fa-linkedin"
+          ></a>
+        </div>
+        <p>
+          &copy; <span id="current-year"></span> John Siordia. All Rights
+          Reserved.
+        </p>
       </div>
     </footer>
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"
-    ></script>
+    ></script> -->
     <script src="script.js"></script>
   </body>
 </html>
